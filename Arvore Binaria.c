@@ -51,14 +51,12 @@ int main()
     while(1){
         printf("Escolha uma opicao.\n");
         printf("1. Inserir um chave.\n");
-        printf("2. Buscar a menor chave.\n");
-        printf("3. Buscar a maior chave.\n");
-        printf("4. Mostar em pre-Ordem.\n");
-        printf("5. Mostar em em-Ordem.\n");
-        printf("6. Mostar em pos-Ordem.\n");
-        printf("7. Procurar uma chave.\n");
-        printf("8. Escluir uma chave.\n");
-        printf("9. Finaliar o programa.\n");
+        printf("2. Mostar em pre-Ordem.\n");
+        printf("3. Mostar em em-Ordem.\n");
+        printf("4. Mostar em pos-Ordem.\n");
+        printf("5. Procurar uma chave.\n");
+        printf("6. Escluir uma chave.\n");
+        printf("7. Finaliar o programa.\n");
         scanf("%d", &ops);
         getchar();
         
@@ -75,42 +73,28 @@ int main()
                 break;
             case 2:
                 system("cls || clear");
-                printf("2. Buscar a menor chave.\n");
-                
-                printf("A menor chave e %lf.\n", menorChaveArvore(arv));
-                
-                break;
-            case 3:
-                system("cls || clear");
-                printf("3. Buscar a maior chave.\n");
-                
-                printf("A maior chave e %lf.\n", maiorChaveArvore(arv));
-                
-                break;
-            case 4:
-                system("cls || clear");
-                printf("4. Mostar em pre-Ordem.\n");
+                printf("2. Mostar em pre-Ordem.\n");
                 
                 preOrdemArvore(arv);
                 
                 break;
-            case 5:
+            case 3:
                 system("cls || clear");
-                printf("5. Mostar em em-Ordem.\n");
+                printf("3. Mostar em em-Ordem.\n");
                 
                 emOrdemArvore(arv);
                 
                 break;
-            case 6:
+            case 4:
                 system("cls || clear");
-                printf("6. Mostar em pos-Ordem.\n");
+                printf("4. Mostar em pos-Ordem.\n");
                 
                 posOrdemArvore(arv);
                 
                 break;
-            case 7:
+            case 5:
                 system("cls || clear");
-                printf("7. Procurar uma chave.\n");
+                printf("5. Procurar uma chave.\n");
                 
                 printf("Qual o valor da chave?\n");
                 scanf("%lf", &chave);
@@ -122,9 +106,9 @@ int main()
                 }
                 
                 break;
-            case 8:
+            case 6:
                 system("cls || clear");
-                printf("8. Escluir uma chave.\n");
+                printf("6. Escluir uma chave.\n");
                 
                 printf("Qual o valor da chave?\n");
                 scanf("%lf", &chave);
@@ -133,9 +117,9 @@ int main()
                 printf("Valor escluido.\n");
                 
                 break;
-            case 9:
+            case 7:
                 system("cls || clear");
-                printf("9. Finaliar o programa.\n");
+                printf("7. Finaliar o programa.\n");
                 
                 return 0;
             default:
